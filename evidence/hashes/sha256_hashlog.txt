@@ -1,0 +1,25 @@
+=== SHA-256 Hash Log — Operation Ghost Card ===
+Generated: 2026-08-24T08:29:00Z
+Hashing tool: sha256sum (coreutils) — simulating field use of a validated write-blocked hashing utility
+
+--- Exhibit A: Skimmer ---
+d83d24f408f45fb16630301db5243e221c164935555a5ef0cc040bd15ded6437  exhibit-A-skimmer/captured_tracks.csv
+105b6a8d1e83554ad7090919353e73f936b6009f8ff98c2a6625743bb9b342d4  exhibit-A-skimmer/device_config.txt
+c206d84d123a9a81bbe96d7ca4a4b6ce706ec7684c8101bda6ed0322e3bd25e2  exhibit-A-skimmer/photo_log.txt
+8fa6beac9af573afe61c7cc5c02c810d8269766a491f51ed677810ab0f9ce694  exhibit-A-skimmer/skimmer_raw_dump.bin
+8a227c46037431d06e8d35c643e255db511bfd1417fb8dbcd82cf010dbe5736d  exhibit-A-skimmer/photos/IMG_A101.jpg
+799198716243a477a93c61a5e7557aa544e776049c4c55f39204f444aab795f8  exhibit-A-skimmer/photos/IMG_A102.jpg
+23107738d499c262802a403f783c364d2c94c03c1270541ec5871ad55becc680  exhibit-A-skimmer/photos/IMG_A104.jpg
+25afb6812e5260442014dbb1849f646b2acd88a685ff54262442bd00295ecc03  exhibit-A-skimmer/photos/IMG_A106.jpg
+
+--- Exhibit B: Phone ---
+cbe8f4e5df4c9e52b2b1ebdadca0949400fdc4341b6a2caef5a6aba370245f0f  exhibit-B-phone/courier_chat_log.txt
+476e81d467d80d9d5d61a6a395497d9af3e40ab439ca9fdd31c5a735275f1c2c  exhibit-B-phone/fraud_app_manifest.txt
+8d0462a160d1b8034a9835fb2fa7348e8c9ed291a4aef4eb4734c39a35782f74  exhibit-B-phone/gallery_log.txt
+38aa3f2aec80b6e4fc0646e86d732a40bf5004ee2bcf2bfa06fb493277e02dfc  exhibit-B-phone/gps_coordinates.csv
+6757e8205b40a1cd6761a73d96662c94fb54781a8829bc58bf0433d8ce422b80  exhibit-B-phone/harvested_sms_log.json
+c47f8e0e5e50b179b7ef033eca6c3458885810807d4cc602e485e6deaae90043  exhibit-B-phone/gallery/IMG_2026-03-31_1.jpg
+60cee86ba26db9357eb2f65cc9d94a8ecd45b9bb97838b3a33dedbd296752291  exhibit-B-phone/gallery/IMG_2026-04-18_1.jpg
+
+--- Exhibit B: Password-protected archive (hashed pre-crack, see docs/04) ---
+f7a4b1d6bb700521583755144e418f3d432747a2246f10d5ba292af5640dd39c  exhibit-B-phone/protected_evidence.zip

@@ -1,0 +1,12 @@
+Gallery/media log (Exhibit B)
+--------------------------------
+IMG_2026-03-31_1.jpg - Screenshot of fraud app dashboard ("cashback balance")  [file: gallery/IMG_2026-03-31_1.jpg]
+IMG_2026-04-03_1.jpg - Photo of cash bundle (runner handoff, per chat context) [not recovered - deleted, no thumbnail cache]
+IMG_2026-04-18_1.jpg - Screenshot of shared location pin (matches GPS-204)     [file: gallery/IMG_2026-04-18_1.jpg]
+
+Note: image files in gallery/ are simulated placeholder graphics (abstract,
+labelled "EVIDENCE PHOTO - SIMULATED") generated for this coursework
+exercise, standing in for what a real gallery/EXIF extraction would
+produce. The entry marked "not recovered" simulates a realistic gap where
+a referenced image was deleted from the device and no thumbnail cache
+copy survived.

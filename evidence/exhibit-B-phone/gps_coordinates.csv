@@ -1,0 +1,6 @@
+id,latitude,longitude,timestamp_utc,note
+GPS-201,19.0760,72.8777,2026-04-16T09:40:00Z,ATM target - branch 1 (dummy coords, Mumbai area)
+GPS-202,19.0896,72.8656,2026-04-16T12:15:00Z,ATM target - branch 2
+GPS-203,19.1197,72.9050,2026-04-17T08:55:00Z,ATM target - branch 3
+GPS-204,19.1334,72.9133,2026-04-18T13:55:00Z,Drop point shared with runner
+GPS-205,19.0330,72.8570,2026-04-19T07:20:00Z,ATM target - branch 4

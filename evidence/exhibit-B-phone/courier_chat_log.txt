@@ -1,0 +1,9 @@
+=== Exhibit B: Chat Application Export (dummy contact "Runner-4") ===
+[2026-04-18 09:30] Suspect: Batch 4 ready, 6 cards. Same handoff spot?
+[2026-04-18 09:33] Runner-4: Yes. Send the pin before noon.
+[2026-04-18 09:36] Suspect: Sending location now.
+[2026-04-18 09:36] Suspect: [location shared - see gps_coordinates.csv row GPS-204]
+[2026-04-18 21:12] Runner-4: 4 cards cleared, 2 declined after 2nd try.
+[2026-04-18 21:14] Suspect: Fine, hold the rest till tomorrow night.
+[2026-04-21 06:45] Runner-4: Funds converted, sending your share the usual way.
+[2026-04-21 06:47] Suspect: Confirmed. Wipe this chat after.

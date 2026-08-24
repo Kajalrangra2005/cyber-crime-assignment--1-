@@ -1,0 +1,7 @@
+[
+  {"id": "SMS-101", "victim_masked": "XXXXXX6120", "sender": "BANK-HDFCBK", "body": "OTP 574839 for txn of INR 31,200. Do not share.", "captured_at": "2026-04-01T09:12:04Z"},
+  {"id": "SMS-102", "victim_masked": "XXXXXX4487", "sender": "BANK-ICICIB", "body": "OTP is 208156 valid 10 min for card ending 2231.", "captured_at": "2026-04-04T14:05:32Z"},
+  {"id": "SMS-103", "victim_masked": "XXXXXX9903", "sender": "BANK-AXISBK", "body": "Use OTP 664721 to authorise payment of INR 9,450.", "captured_at": "2026-04-08T11:47:19Z"},
+  {"id": "SMS-104", "victim_masked": "XXXXXX3358", "sender": "BANK-KOTAKB", "body": "OTP 350982 for txn of INR 16,800. Do not share.", "captured_at": "2026-04-12T19:30:51Z"},
+  {"id": "SMS-105", "victim_masked": "XXXXXX7714", "sender": "BANK-YESBNK", "body": "OTP 891043 valid 5 min for online purchase.", "captured_at": "2026-04-15T22:02:08Z"}
+]

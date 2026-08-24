@@ -1,0 +1,12 @@
+=== Exhibit A: Skimmer Device Configuration Readout ===
+Device model (dummy): GhostCard SK-9 overlay unit
+Firmware version: 3.2
+Storage: 8GB onboard flash
+Comms module: Bluetooth 5.0 LE + backup GSM SIM slot (SIM not present at seizure)
+Camera module: 1x pinhole, 1080p, motion-triggered
+Power source: Li-Po 1200mAh, internal
+Bluetooth pairing MAC (dummy): D4:E5:F6:10:22:33
+Last data offload timestamp (dummy): 2026-04-21T20:11:47Z
+Total capture records at seizure: 6
+Physical installation notes: Overlay fitted over card-slot bezel of ATM unit;
+  camera positioned above PIN pad, angled downward, disguised as a brochure holder.

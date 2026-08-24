@@ -1,0 +1,14 @@
+Photo evidence log (Exhibit A)
+--------------------------------
+IMG_A101.jpg - Skimmer overlay as found on ATM card slot, wide shot        [file: photos/IMG_A101.jpg]
+IMG_A102.jpg - Skimmer overlay, close-up of card entry point               [file: photos/IMG_A102.jpg]
+IMG_A103.jpg - Pinhole camera position above keypad                        [not captured - angle obstructed by brochure holder]
+IMG_A104.jpg - Device after removal, front view                           [file: photos/IMG_A104.jpg]
+IMG_A105.jpg - Device after removal, rear view (battery/storage chip)     [not captured - see A104 for device condition]
+IMG_A106.jpg - Evidence bag with tamper-evident seal, exhibit tag visible  [file: photos/IMG_A106.jpg]
+
+Note: image files in photos/ are simulated placeholder graphics (abstract,
+labelled "EVIDENCE PHOTO - SIMULATED") generated for this coursework
+exercise, standing in for what real seizure photography would produce.
+Entries marked "not captured" simulate normal real-world gaps in a photo
+log and are documented as such rather than fabricated.

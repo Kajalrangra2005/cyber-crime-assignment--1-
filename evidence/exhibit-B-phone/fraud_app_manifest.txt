@@ -1,0 +1,16 @@
+=== Exhibit B: Sideloaded Application Metadata ===
+App label (as displayed): "PayBoost Cashback"  [NOTE: not a genuine bank/wallet app - impersonation]
+Package name (dummy): com.payboost.cashbackapp
+Version: 2.1.0
+Install source: Sideloaded (APK via WhatsApp link), not Play Store
+Install timestamp (dummy): 2026-03-30T18:40:11Z
+Requested permissions:
+  - RECEIVE_SMS
+  - READ_SMS
+  - SEND_SMS
+  - SYSTEM_ALERT_WINDOW (overlay)
+  - BIND_ACCESSIBILITY_SERVICE
+  - INTERNET
+  - ACCESS_FINE_LOCATION
+Certificate signer (dummy): self-signed, CN=unknown
+Remote C2 endpoint referenced in strings (dummy, non-resolving): hxxp://45.137.0[.]dummy/sync
