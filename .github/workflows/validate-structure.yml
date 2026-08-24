@@ -1,0 +1,92 @@
+name: Validate Repo Structure & Evidence Integrity
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files and folders exist
+        run: |
+          set -e
+          required=(
+            "README.md"
+            "docs/01-cybercrime-taxonomy.md"
+            "docs/02-evidence-collection.md"
+            "docs/03-media-analysis.md"
+            "docs/04-cryptography-component.md"
+            "report"
+            "evidence/exhibit-A-skimmer"
+            "evidence/exhibit-B-phone"
+            "evidence/hashes/sha256_hashlog.txt"
+            "tools/crack_zip.py"
+            "screenshots"
+          )
+          missing=0
+          for path in "${required[@]}"; do
+            if [ ! -e "$path" ]; then
+              echo "::error::Missing required path: $path"
+              missing=1
+            else
+              echo "OK: $path"
+            fi
+          done
+          if [ "$missing" -eq 1 ]; then
+            echo "Repository structure check FAILED."
+            exit 1
+          fi
+          echo "Repository structure check PASSED."
+
+      - name: Check a report deliverable exists (PDF or DOCX)
+        run: |
+          shopt -s nullglob
+          reports=(report/*.docx report/*.pdf)
+          if [ ${#reports[@]} -eq 0 ]; then
+            echo "::error::No .docx or .pdf report found in report/"
+            exit 1
+          fi
+          echo "Report found: ${reports[*]}"
+
+      - name: Verify evidence file hashes against sha256_hashlog.txt
+        run: |
+          set -e
+          cd evidence
+          fail=0
+          # Extract "hash  path" lines from the hash log and re-verify each one.
+          grep -E '^[0-9a-f]{64}  ' hashes/sha256_hashlog.txt > /tmp/expected_hashes.txt || true
+          if [ ! -s /tmp/expected_hashes.txt ]; then
+            echo "::error::No hash entries parsed from hashes/sha256_hashlog.txt"
+            exit 1
+          fi
+          while IFS= read -r line; do
+            expected_hash=$(echo "$line" | awk '{print $1}')
+            file_path=$(echo "$line" | cut -d' ' -f3-)
+            if [ ! -f "$file_path" ]; then
+              echo "::error::Hashed file missing from repo: $file_path"
+              fail=1
+              continue
+            fi
+            actual_hash=$(sha256sum "$file_path" | awk '{print $1}')
+            if [ "$actual_hash" != "$expected_hash" ]; then
+              echo "::error::Hash mismatch for $file_path (expected $expected_hash, got $actual_hash)"
+              fail=1
+            else
+              echo "Hash OK: $file_path"
+            fi
+          done < /tmp/expected_hashes.txt
+          if [ "$fail" -eq 1 ]; then
+            echo "Evidence integrity check FAILED — chain of custody broken."
+            exit 1
+          fi
+          echo "Evidence integrity check PASSED — all hashes match."
+
+      - name: Summary
+        if: success()
+        run: echo "✅ Repo structure and evidence integrity validated successfully."
